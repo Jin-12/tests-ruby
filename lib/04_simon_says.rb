@@ -24,14 +24,13 @@ def first_word(string)
 end
 
 def titleize(string)
-  #return string.split.map(&:capitalize).join(' ')
-  array = string.split
-  array.map { |word|
-    if word.length >= 4 || array.find_index == 0
-      word.capitalize
-    end
-  }
-    return array.join(' ')
-end
-
-puts titleize("")
+   array = string.split
+   i = 0
+   array.each do |word|
+     if word.size >= 4 || word == array[0]
+       array[i] = word.capitalize
+     end
+     i += 1
+   end
+   return array.join(" ")
+ end
