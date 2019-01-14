@@ -8,14 +8,14 @@ end
 
 def repeat(string, number = 2)
   return([string] * number).join ' '
-  end
+end
 
 def start_of_word(word, number)
   if number <= 1
     return word [number - 1]
   else
-  return word [0..number -1]
-end
+    return word [0..number -1]
+  end
 end
 
 def first_word(string)
