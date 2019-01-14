@@ -10,7 +10,6 @@ def time_string(seconds)
      h = m /60 
      m = m % 60
   end
-  return "#{h}:#{m}:#{s}"
+  puts 
+  return "#{"%.2i" %h}:#{"%.2i" %m}:#{"%.2i" %s}"
 end
-
-puts time_string(3600)
